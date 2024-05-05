@@ -9,34 +9,37 @@
 <body>
     <header class="header">
         <div class="container">
-          <img src="svg/noemi-logo.svg" class="header-logo" alt>
-          <nav class="menu">
-            <ul class="menu-list">
-              <li class="menu-list-item">
-                <a class="menu-link" href="#home">Главная</a>
-              </li>
-              <li class="menu-list-item">
-                <a class="menu-link" href="#0">Посты</a>
-              </li>
-              <li class="menu-list-item">
-                <a class="menu-link" href="#0">Статьи</a>
-              </li>
-              <li class="menu-list-item">
-                <a class="menu-link" href="#0">Теги</a>
-              </li>
-              <li class="menu-list-item">
-                <a class="menu-link" href="#0">Темы</a>
-              </li>
-              <li class="menu-list-item">
-                <a class="menu-link" href="#0">Контакты</a>
-              </li>
-            </ul>
-          </nav>
+            <img src="svg/noemi-logo.svg" class="header-logo" alt>
+            <nav class="menu">
+                <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+                <label for="burger-checkbox" class="burger"></label>
+                <ul class="menu-list">
+                <li class="menu-list-item">
+                    <a class="menu-link" href="#home">Главная</a>
+                </li>
+                <li class="menu-list-item">
+                    <a class="menu-link" href="#0">Посты</a>
+                </li>
+                <li class="menu-list-item">
+                    <a class="menu-link" href="#0">Статьи</a>
+                </li>
+                <li class="menu-list-item">
+                    <a class="menu-link" href="#0">Теги</a>
+                </li>
+                <li class="menu-list-item">
+                    <a class="menu-link" href="#0">Темы</a>
+                </li>
+                <li class="menu-list-item">
+                    <a class="menu-link" href="#0">Контакты</a>
+                </li>
+                </ul>
+            </nav>
         </div>
-        <h1 class="title">Блог о творчестве, спорте и образе жизни</h1>
+        <h1 class="title">Блог о творчестве, спорте и образе жизни</h1>     
     </header>
         <section class="trends">
             <h5 class="title-trends">Сейчас в тренде</h5>
+            <hr class="create-line">
             <ul class="trend-list">
                 <li class="trend-list-item garden">
                     <article class="trend-title">    
@@ -77,6 +80,7 @@
                         </div>
                         <span class="text">Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушел, запущены фонтаны города… Музеи еще закрыты. Что посмотреть?</span>
                     </div>
+                    <div class="create-line-mobile"></div>
                 </li>
                 <li class="post-list-item">
                     <img src="images/last-post2.jpg" alt="Фотография позы йоги на голове" class="foto-post">
@@ -86,8 +90,9 @@
                         <div class="date-author">
                             <p class="date">10 июня 2019 года</p><p class="author">Неизвестный автор</p>
                         </div>
-                        <span class="text">Расскажем, какие упражнения выбрать и как сделать коврик для занятий йогой из того, что можно найти в шкафу.</span>
+                        <span class="text">Расскажем, какие упражнения выбрать и как сделать коврик для занятий йогой из того, что можно найти в шкафу</span>
                     </div>
+                    <div class="create-line-mobile"></div>
                 </li>
                 <li class="post-list-item">
                     <img src="images/last-post3.jpg" alt="Фотография девушки на фестивале" class="foto-post">
@@ -99,6 +104,7 @@
                         </div>
                         <span class="text">Лето на носу, а с ним и музыкальные фестивали. На каком же из них вы разобьёте свою палатку? Мы составили список лучших летних фестивалей по всему миру.</span>
                     </div>
+                    <div class="create-line-mobile"></div>
                 </li>
                 <li class="post-list-item">
                     <img src="images/last-post4.jpg" alt="Фотография с трапезой" class="foto-post">
@@ -110,6 +116,7 @@
                         </div>
                         <span class="text">Узнаем основы проектирования новых пищевых и около-пищевых опытов, вскроем физику, химию и микробиологию еды.</span>
                     </div>
+                    <div class="create-line-mobile"></div>
                 </li>
                 <li class="post-list-item">
                     <img src="images/last-post5.jpg" alt="Фотография подушки с принтом" class="foto-post">
@@ -121,6 +128,7 @@
                         </div>
                         <span class="text">Подушки для дивана целесообразнее заказать в съемных чехлах на молнии, если потребуется чистка подушек, проще снять чехлы, чем везти подушку в химчистку.</span>
                     </div>
+                    <div class="create-line-mobile"></div>
                 </li>
             </ul>    
         </section>
@@ -129,7 +137,7 @@
             <hr class="create-line">
             <ul class="last-post-list">
                 <li class="last-post-list-item">
-                        <img src="images/2.jpg" alt="Фотография с рассветом" class="foto-last-post">
+                        <img src="images/last-post1.jpg" alt="Фотография с рассветом" class="foto-last-post">
                         <div class="frame-last-post">
                             <p class="date-last-post">14 июня 2019 года</p>
                             <a href="#0" class="last-post-title">10 мест, ради которых стоит проснуться на рассвете</a>
@@ -164,14 +172,16 @@
                         </div>
                 </li>
             </ul>
-            <div class="search">
+            <form class="search">
                 <input type="search" class="search-input" placeholder="Найти...">
                 <button class="search-button"><img src="svg/search.svg" alt="иконка поиска" class="icon-search"></button>
-            </div>
+            </form>
             <h6 class="title-last_posts">Рассылка</h6>
             <hr class="create-line">
-            <input type="email" class="email" placeholder="Ваш email-адрес">    
-            <button class="subscribe">подписаться</button>
+            <form action="send">
+                <input type="email" class="email" placeholder="Ваш email-адрес">    
+                <button class="subscribe">подписаться</button>
+            </form>
             <h6 class="title-last_posts">теги</h6>
             <hr class="create-line">  
             <div class="category-tag">
@@ -184,7 +194,7 @@
                 <a href="#0" class="tag">Food</a>
                 <a href="#0" class="tag">Health</a>
             </div> 
-            <h6 class="title-last_posts">Темы</h6>
+            <h6 class="title-last_posts_theme">Темы</h6>
             <hr class="create-line">
             <a href="#0" class="theme">Красота<sup>12</sup></a>
             <hr class="create-line-theme">
@@ -204,7 +214,7 @@
             <hr class="create-line">
             <ul class="goods-list">
                 <li class="good-list-item">
-                    <img src="images/shop-item-desk1.jpg" alt="Фотография подушки на диван" class="foto-good">
+                    <img src="images/shop-item-mobile1.jpg" alt="Фотография подушки на диван" class="foto-good">
                     <div class="frame-good">
                         <h5 class="title_article post-title">Подушки на диван</h5>
                         <span class="text">
@@ -221,12 +231,10 @@
                     </div>
                 </li>
                 <li class="good-list-item">
-                    <img src="images/shop-item-desk2.jpg" alt="Фотография куклы в виде зайчика" class="foto-good">
+                    <img src="images/shop-item-mobile2.jpg" alt="Фотография куклы в виде зайчика" class="foto-good">
                     <div class="frame-good">
                         <h5 class="title_article post-title">Кукла "зайчик"</h5>
-                        <span class="text">
-                            Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a href="#0" class="link">весенняя серия постов</a> в блоге и несколько подкастов.
-                        </span>
+                        <span class="text">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a href="#0" class="link">весенняя серия постов</a> в блоге и несколько подкастов.</span>
                         <div class="price-link">
                             <div class="prices">
                                 <p class="last-price">3500р</p>
@@ -236,7 +244,7 @@
                     </div>
                 </li>
                 <li class="good-list-item">
-                    <img src="images/shop-item-desk3.jpg" alt="Фотография шестиугольной рамки в интерьере" class="foto-good">
+                    <img src="images/shop-item-mobile3.jpg" alt="Фотография шестиугольной рамки в интерьере" class="foto-good">
                     <div class="frame-good">
                         <h5 class="title_article post-title">Шестиугольная рамка</h5>
                         <span class="text">
@@ -257,7 +265,7 @@
             <a href="#0"><img src="svg/001-dribbble.svg" alt="иконка dribbble" class="dribbble"></a>
             <a href="#0"><img src="svg/001-pinterest.svg" alt="иконка pinterest" class="pinterest"></a>
             <a href="#0"><img src="svg/003-tumblr.svg" alt="иконка" class="tumblr"></a>
-        </footer>
+        </footer>  
     </main>
 </body>
 </html>
