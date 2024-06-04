@@ -7,6 +7,28 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <form class="feedback">
+        <h3 class="title-feedback">Ваш фидбек</h3>
+        <div class="create-line-feedback"></div>
+        <span class="survey">Как часто Вы заходите на сайт?</span>
+        <select class="select">
+            <option selected>Почти каждый день</option>
+            <option>Раз в неделю</option>
+            <option>Не чаще одного раза в месяц</option>
+            <option>Раз в несколько месяцев</option>
+            <option>Затрудняюсь ответить</option>
+        </select>
+        <div class="survey">Вы подписаны на e-mail рассылку?</div>
+        <div class="switch">
+            <input class="radio" type="radio" id="yes"/>
+            <label class="choice-yes" for="yes">Да</label>
+            <input class="radio" type="radio" class="answer" id="no"/>
+            <label class="choice-no" for="no">Нет</label>
+        </div>    
+        <label for="content" class="survey">Расскажите, какой контент Вы бы хотели видеть на нашем сайте?</label>
+        <input type="textarea" id="content" class="text" placeholder="Может, больше рецептов?"/>
+        <button class="feedback-button">отправить</button>      
+    </form>
     <header class="header">
         <div class="container">
             <img src="svg/noemi-logo.svg" class="header-logo" alt>
@@ -73,7 +95,9 @@
                 <li class="post-list-item">
                     <img src="images/last-post1.jpg" alt="Фотография с рассветом" class="foto-post">
                     <div class="frame">
-                        <h6 class="category">Travel Health</h6>
+                        <h6 >
+                            <a href="#0" class="category">Travel Health</a>
+                        </h6>
                         <a href="#0" class="title_article post-title">10 мест, ради которых стоит проснуться на рассвете</a>
                         <div class="date-author">
                             <p class="date">10 июня 2019 года</p><p class="author">Неизвестный автор</p>
@@ -85,7 +109,9 @@
                 <li class="post-list-item">
                     <img src="images/last-post2.jpg" alt="Фотография позы йоги на голове" class="foto-post">
                     <div class="frame">
-                        <h6 class="category">Health Lifestyle</h6>
+                        <h6 >
+                            <a href="#0" class="category">Health Lifestyle</a>
+                        </h6>
                         <a href="#0" class="title_article post-title">Йога для начинающих в домашних условиях</a>
                         <div class="date-author">
                             <p class="date">10 июня 2019 года</p><p class="author">Неизвестный автор</p>
@@ -97,7 +123,9 @@
                 <li class="post-list-item">
                     <img src="images/last-post3.jpg" alt="Фотография девушки на фестивале" class="foto-post">
                     <div class="frame">
-                        <h6 class="category">Music</h6>
+                        <h6 >
+                            <a href="#0" class="category">Music</a>
+                        </h6>
                         <a href="#0" class="title_article post-title">Лучшие музыкальные фестивали этого лета</a>
                         <div class="date-author">
                             <p class="date">10 июня 2019 года</p><p class="author">Неизвестный автор</p>
@@ -109,7 +137,9 @@
                 <li class="post-list-item">
                     <img src="images/last-post4.jpg" alt="Фотография с трапезой" class="foto-post">
                     <div class="frame">
-                        <h6 class="category">Lifestyle Food</h6>
+                        <h6 >
+                            <a href="#0" class="category">Lifestyle Food</a>
+                        </h6>
                         <a href="#0" class="title_article post-title">Наукоёмкий подход к кулинарии</a>
                         <div class="date-author">
                             <p class="date">10 июня 2019 года</p><p class="author">Неизвестный автор</p>
@@ -121,7 +151,9 @@
                 <li class="post-list-item">
                     <img src="images/last-post5.jpg" alt="Фотография подушки с принтом" class="foto-post">
                     <div class="frame">
-                        <h6 class="category">Lifestyle Interior Art</h6>
+                        <h6 >
+                            <a href="#0" class="category">Lifestyle Interior Art</a>
+                        </h6>
                         <a href="#0" class="title_article post-title">Делаем модные принты на подушках для интерьера</a>
                         <div class="date-author">
                             <p class="date">10 июня 2019 года</p><p class="author">Неизвестный автор</p>

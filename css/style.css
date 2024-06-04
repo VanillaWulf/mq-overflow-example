@@ -11,10 +11,141 @@ html {
     font-size: 16px;
 }
 
+.feedback {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 388.7px;
+    height: 546px;
+    font-family: "OpenSans-Regular";
+    font-size: 13px;
+    background-color: white;
+    justify-content:flex-start;
+    align-items: center;
+    left: 30%;
+    top: 25%;
+    z-index: 3;
+    /* display: none; */
+}
+body::after {
+    content: "";
+    position: fixed;
+    background-color: #000000;
+    opacity: 0.6;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 2;
+    /* display: none; */
+}
+
+.survey, .select, .switch {
+    width: 85%;
+    font-family: "OpenSans-Regular";
+    font-size: 13px;
+    text-align: left;
+
+}
+
+.survey {
+    margin-bottom: 13px;
+    margin-top: 23px;
+}
+
+.create-line-feedback {
+    width: 66px;
+    border-top: 3px solid #ebe6d3;
+    margin-top: 14px;
+    /* margin-bottom: 44px; */
+}
+
+.title-feedback {
+    text-align: center;
+    font-family: "OpenSans-Bold";
+    font-size: 20px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+}
+.switch {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+.answer {
+    margin-left: 20px;
+}
+
+.feedback-button {
+    min-height: 49px;
+    width: 85%;
+    text-transform: uppercase;
+    font-family: "OpenSans-Bold";
+    color: white;
+    background-color:#b59f5b;
+    font-size: 16px;
+    border: none;
+    margin-top: 26px;
+    cursor: pointer;
+}
+
+.text {
+    background-color: #f4f7f6;
+    width: 85%;
+    font-size: 13px;
+    min-height: 108px;
+    border: none;
+    padding-left: 18px;
+    box-sizing: border-box;
+    /* margin-bottom: 18px; */
+    cursor: pointer;
+    vertical-align: top;
+}
+
+.select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    min-height: 49px;
+    font-family: "OpenSans-Regular";
+    background-color: #f4f7f6;
+    font-size: 13px;
+    border: none;
+    padding-left: 18px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.radio {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    color: #b59f5b;
+}
+.choice-no::before {
+    content: "";
+    display: inline-block;
+    background-image: url("../svg/form-circle.svg");
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 20px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+.choice-yes::before {
+    content: "";
+    display: inline-block;
+    background-image: url("../svg/form-empty-circle.svg");
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 20px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
 @media (max-width: 640px) and (orientation: portrait) {
     body {
         max-width: 361px;
         text-align: center;
+        margin: auto;
     }
     main {
         max-width: 331px;
@@ -1023,8 +1154,8 @@ h5, h6 {
 
 .create-line {
     width: 66px;
-    height: 2px;
-    background-color: #ebe6d3;
+    height: 3px;
+    background-color: #b59f5b;
     margin-bottom: 25px;
 }
 
@@ -1140,15 +1271,17 @@ p.date-last-post {
     border: none;
 }
 
-.search-input:focus, .email:hover {
+.search-input:focus {
     background-color: #f4f7f6;
     outline: 1px solid #f4e5b8;
+    font-size: 14.58px;
 }
 
 .search-button {
     width: 18%;
     background-color: #b59f5b;
     border: none;
+    cursor: pointer;
 }
 
 .search-button:hover  {
@@ -1158,6 +1291,7 @@ p.date-last-post {
 .icon-search {
     width: 22px;
     height: 22px;
+    
 }
 
 .email {
@@ -1169,6 +1303,13 @@ p.date-last-post {
     padding-left: 18px;
     box-sizing: border-box;
     margin-bottom: 18px;
+    cursor: pointer;
+}
+
+.email:focus, .email:hover {
+    font-size: 14.58px;
+    background-color: #f4f7f6;
+    outline: 1px solid #f4e5b8;
 }
 
 .subscribe {
@@ -1179,6 +1320,12 @@ p.date-last-post {
     font-size: 14px;
     border: none;
     margin-bottom: 55px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.subscribe:hover {
+    font-size: 15,7px;
 }
 
 .category-tag {
@@ -1189,6 +1336,10 @@ p.date-last-post {
     display: flex;
     flex-wrap: wrap;
     column-gap: 4px;
+}
+
+.category:hover {
+    text-decoration: underline;
 }
 
 .tag {
