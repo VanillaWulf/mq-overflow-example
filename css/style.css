@@ -31,15 +31,16 @@ html {
     top: 11px;
     transform: rotate(45deg);
     box-shadow: 0 6px 0 rgba(0,0,0,0);
-    transition: box-shadow .15s, top .3s, transform .3s .15s;
+    
 }
 .cross::after {
     bottom: 11px;
     transform: rotate(-45deg);
-    transition: bottom .3s, transform .3s .15s;
 }
 
-
+._hidden {
+    visibility: hidden;
+}
 .feedback {
     display: flex;
     flex-direction: column;
@@ -50,8 +51,10 @@ html {
     background-color: white;
     justify-content:flex-start;
     align-items: center;
-    
     z-index: 3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     /* display: none; */
 }
 body::after {
@@ -61,6 +64,7 @@ body::after {
     opacity: 0.6;
     top: 0; left: 0; right: 0; bottom: 0;
     z-index: 2;
+    visibility: hidden;
     /* display: none; */
 }
 
@@ -184,9 +188,12 @@ body::after {
     .feedback {
         width: 331.6px;
         height: 546.2px;
-        left: 5%;
-        top: 7%;
+        /* left: 5%; */
+        /* top: 7%; */
     }
+    .cross {
+        transform:translate(370%,-120%)
+      }
 
     .header {
         min-height: 638.9px;
@@ -271,8 +278,9 @@ body::after {
         row-gap: 2px;
         margin: 0;
         list-style-type: none;
-        transform: translateX(100%);
+        transform: translateX(-100%);
         transition: .3s;
+        visibility: hidden;
     }
     .menu-link {
         text-decoration: none;
@@ -280,6 +288,7 @@ body::after {
 
     }
     .burger-checkbox:checked ~ .menu-list {
+        visibility: visible;
         transform: translateX(-100%);
       }
 
@@ -467,8 +476,8 @@ body::after {
     .feedback {
         width: 388.7px;
         height: 593.7px;
-        left: 22.5%;
-        top: 25%;
+        /* left: 22.5%; */
+        /* top: 25%; */
     }
     
     .shop {
@@ -573,8 +582,9 @@ body::after {
         row-gap: 2px;
         margin: 0;
         list-style-type: none;
-        transform: translateX(100%);
+        transform: translateX(-100%);
         transition: .3s;
+        visibility: hidden;
     }
     .menu-link {
         text-decoration: none;
@@ -583,6 +593,7 @@ body::after {
     }
     .burger-checkbox:checked ~ .menu-list {
         transform: translateX(-100%);
+        visibility: visible;
     }
 
     .burger-checkbox:checked + .burger {
@@ -761,8 +772,8 @@ body::after {
     .feedback {
         width: 388.7px;
         height: 587.2px;
-        left: 30%;
-        top: 25%;
+        /* left: 30%; */
+        /* top: 25%; */
     }
 
     .burger {
