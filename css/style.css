@@ -117,7 +117,7 @@ body::after {
     cursor: pointer;
 }
 
-.text {
+.text-feedback {
     background-color: #f4f7f6;
     width: 85%;
     font-family: "OpenSans-Regular";
@@ -656,7 +656,7 @@ body::after {
     }
     .foto-post {
         max-height: 300px;
-        min-width: 324px;
+        min-width: 297px;
         /* min-width: 100%; */
         background-color: #d1cbcb;
         font-size: 1.2rem;
@@ -673,10 +673,11 @@ body::after {
         display: flex;
         flex-direction: column;
         min-height: 297px;
+        min-width: 297px;
     }
     .frame {
         /* min-width: 367px; */
-        min-width: 324px;
+        min-width: 297px;
         min-height: 244px;
         text-align: left;
     }
