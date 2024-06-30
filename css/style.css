@@ -10,6 +10,11 @@
 html {
     font-size: 16px;
 }
+
+/* * {
+    outline: solid 1px red;;
+} */
+
 .cross {
     position: relative;
     border: none;
@@ -359,7 +364,7 @@ body::after {
         box-sizing: border-box;
     }
     .shop {
-        max-width: 100%;
+        max-width: 90%;
         margin: auto;
         box-sizing: border-box; 
         min-height: 477px;
@@ -481,9 +486,10 @@ body::after {
     }
     
     .shop {
-        max-width: 700px;
-        min-width: 642px;
-        width: 100%;
+        /* max-width: 700px; */
+        /* min-width: 642px; */
+        /* min-width: 582px; */
+        max-width: 100%;
     }
     
     .header {
@@ -524,10 +530,11 @@ body::after {
         position: relative;
         border: none;
         background: transparent;
-        margin-top: 21px;
+        margin-top: 15px;
         width: 24px;
         height: 20px;
-        transform:translateX(250%)
+        /* transform:translateX(250%) */
+        transform:translateX(550%)
       }
 
     .burger::before, .burger::after {
@@ -549,7 +556,8 @@ body::after {
       }
 
     .container {
-        max-width: 87%; 
+        /* max-width: 87%; */
+        max-width: 75%;
         display: flex;
         flex-wrap: wrap;
         /* height: 283px; */
@@ -1393,7 +1401,8 @@ p.date-last-post {
 
 .category-tag {
     font-family: "OpenSans-Bold";
-    min-width: 272px;
+    /* min-width: 272px; */
+    min-width: 100%;
     font-size: 0.75rem;
     text-transform: uppercase;
     display: flex;
